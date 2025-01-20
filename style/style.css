@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Heading styles */
+
+header {
+  margin: 2rem auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo > h1 {
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: rgb(254, 163, 1);
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.about {
+    color: rgb(1, 172, 253)
+}
+
+.facilities{
+   color: rgb(5, 212, 223);
+}
+
+.admission{
+    color: rgb(93, 88, 239);
+}
+
+header > button {
+  padding: 0.7rem;
+  width: 11rem;
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 12px;
+  background: rgb(254, 163, 1);
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
