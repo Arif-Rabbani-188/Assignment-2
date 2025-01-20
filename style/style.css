@@ -6,11 +6,29 @@
   box-sizing: border-box;
 }
 
+/* Common Style */
+
+.btn {
+  padding: 0.7rem;
+  width: 11rem;
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 12px;
+  background: rgb(254, 163, 1);
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+
 /* Heading styles */
 
 header {
   margin: 2rem auto;
-  width: 80%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,15 +66,15 @@ header > nav > ul > li > a {
 }
 
 .about {
-    color: rgb(1, 172, 253)
+  color: rgb(1, 172, 253);
 }
 
-.facilities{
-   color: rgb(5, 212, 223);
+.facilities {
+  color: rgb(5, 212, 223);
 }
 
-.admission{
-    color: rgb(93, 88, 239);
+.admission {
+  color: rgb(93, 88, 239);
 }
 
 header > button {
@@ -73,4 +91,45 @@ header > button {
   border-radius: 0.8rem;
   border: none;
   cursor: pointer;
+}
+
+/* Top Banner */
+
+.topBanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 3rem auto;
+  gap: 3.2rem;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 40rem;
+  height: 20rem;
+  justify-content: space-between;
+}
+
+.textContent > h1 {
+  font-family: Quicksand;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.textContent > p {
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.textContent > .btn {
+  background: rgb(17, 17, 17);
 }
