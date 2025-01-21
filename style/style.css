@@ -25,6 +25,41 @@
   cursor: pointer;
 }
 
+/* Marquee style */
+
+.marquee {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  background: white;
+  color: rgb(17, 17, 17);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.marquee p {
+  font-family: Quicksand;
+  font-size: 1.2rem;
+  font-weight: 900;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  transform: translateX(100%);
+  animation: scroll-left 15s linear infinite;
+  text-wrap: nowrap;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(75%);
+  }
+  100% {
+    transform: translateX(-75%);
+  }
+}
+
 /* Heading styles */
 
 header {
@@ -94,6 +129,19 @@ header > button {
   cursor: pointer;
 }
 
+header > button:hover {
+  background: black;
+  color: white;
+}
+
+.menu {
+  display: none;
+}
+
+.menu > img {
+  width: 2rem;
+}
+
 /* Top Banner */
 
 .topBanner {
@@ -141,6 +189,10 @@ header > button {
 
 .textContent > .btn {
   background: rgb(17, 17, 17);
+}
+
+.btn:hover {
+  background: rgb(254, 163, 1);
 }
 
 /* Curriculam Section */
@@ -220,9 +272,56 @@ header > button {
   text-align: center;
 }
 
+.card2 {
+  box-sizing: border-box;
+  border: 0.94px solid rgb(255, 244, 220);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.card3 {
+  box-sizing: border-box;
+  border: 0.94px solid rgb(242, 232, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.card1 > a {
+  text-decoration: none;
+  color: rgb(100, 200, 255);
+}
+
+.card2 > a {
+  text-decoration: none;
+  color: rgb(240, 170, 0);
+}
+
+.card3 > a {
+  text-decoration: none;
+  color: rgb(135, 0, 255);
+}
+
 .arrow {
   display: flex;
   gap: 2rem;
+}
+
+.symbol:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 .symbol {
@@ -342,8 +441,8 @@ header > button {
 }
 
 .boxs {
-  width: 290px;
-  height: 310px;
+  width: 18.125rem;
+  height: 19.375rem;
   border-radius: 16px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
   background: rgb(255, 255, 255);
@@ -417,15 +516,15 @@ footer {
   height: 15rem;
 }
 
-.column > .logoBottom{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+.column > .logoBottom {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
-.logoBottom> img{
-    background-color: white;
-    padding: 0.5rem;
+.logoBottom > img {
+  background-color: white;
+  padding: 0.5rem;
 }
 
 .column > p {
@@ -454,10 +553,10 @@ footer {
   text-align: left;
 }
 
-.social{
-    display: flex;
-    gap: 1.5rem;
+.social {
+  display: flex;
+  gap: 1.5rem;
 }
-.social >a > img{
-    width: 3rem;
+.social > a > img {
+  width: 3rem;
 }
